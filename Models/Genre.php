@@ -5,7 +5,7 @@ class Genre{
     public $description;
 
 
-    function __construct($_name, $_description){
+    function __construct(string $_name, string $_description){
         $this->name = $_name;
         $this->description = $_description;
     }

@@ -39,6 +39,25 @@ class Movie{
     public function getRating(){
         return $this->rating;
     }
+
+    public function getGenreString(){
+        $allGenre ="";
+        foreach($this->genre as $genre){
+            $allGenre .= $genre->name . ", ";
+        }
+        $allGenre = rtrim($allGenre, ", ");
+        return $allGenre;
+    }
+
+    public function getGenre(){
+        return $this->genre;
+    }
+    public function getDirector(){
+        return $this->director;
+    }
+    public function getDuration(){
+        return $this->duration;
+    }
 }
 
 
