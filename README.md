@@ -2,8 +2,8 @@
 # Nome repo: ex-php8-oop-movie
 Alleniamoci con la OOP di PHP immaginando delle classi pertinenti a Film e generi cinematografici
 ## Svolgimento
-- [] Creare un file index.php in cui
-- [] è definita la classe Movie
+- [X] Creare un file index.php in cui
+- [X] è definita la classe Movie
    => all'interno della classe sono dichiarate delle variabili d'istanza
    => all'interno della classe è definito un costruttore
    => all'interno della classe è definito almeno un metodo
