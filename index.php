@@ -24,8 +24,9 @@ class Movie{
      * @param int $_duration
      * @param Director $_director
      * @param Actor[] $_cast Array di oggetti Actor
+     * @param Genre[] $_genre Array di oggetti Genre
      */
-    function __construct(string $_title, int $_duration, Director $_director, array $_cast, Genre $_genre){
+    function __construct(string $_title, int $_duration, Director $_director, array $_cast, array $_genre){
         $this->title = $_title;
         $this->duration = $_duration;
         $this->director = $_director;
@@ -50,9 +51,11 @@ class Genre{
 }
 
 $director = new Director("Steven", "Spielberg", 77);
+$adventure = new Genre("Adventure", "Aventure movie with dinosaurs");
+$scienceFiction = new Genre("Science Fiction", "A science fiction movie about an alien");
 
-$movie1 = new Movie("Jurassic Park", 127, $director, [], new Genre("Adventure", "Aventure movie with dinosaurs"));
-$movie2 = new Movie("E.T.", 115, $director, [], new Genre("Science Fiction", "A science fiction movie about an alien"));
+$movie1 = new Movie("Jurassic Park", 127, $director, [], [$adventure, $scienceFiction]);
+$movie2 = new Movie("E.T.", 115, $director, [], [$scienceFiction]);
 
 var_dump($movie1);
 var_dump($movie2);

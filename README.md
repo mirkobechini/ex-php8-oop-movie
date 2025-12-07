@@ -16,9 +16,11 @@ Alleniamoci con la OOP di PHP immaginando delle classi pertinenti a Film e gener
 
 
 ## Bonus 1
-- [] Modificare la classe Movie in modo che accetti piú di un genere.
+- [X] Modificare la classe Movie in modo che accetti piú di un genere.
+
 ## Bonus 2
 - [] Aggiungere un Trait alla classe Movie con almeno una proprietà e un metodo.
+
 ## Bonus 3
 - [] Creare un layout completo per stampare a schermo una lista di movies.
 Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi file e cartelle.
