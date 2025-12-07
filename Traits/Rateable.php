@@ -1,7 +1,7 @@
 <?php
 
 trait Rateable{
-    private $rating;
+    protected $rating;
 
     function setRating(float $_rating){
         if($_rating >= 0 && $_rating <= 10){

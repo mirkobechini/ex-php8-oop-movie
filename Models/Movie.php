@@ -1,12 +1,13 @@
 <?php
 
 class Movie{
-    public $title;
-    public $duration;
-    public $director;
-    public $cast;
-    public $genre;
     use Rateable;
+    
+    private $title;
+    private $duration;
+    private $director;
+    private $cast;
+    protected $genre;
 
     /**
      * @param string $_title
@@ -29,6 +30,14 @@ class Movie{
 
     function countActors(){
         return "\nNel film ci sono " . count($this->cast) . " attori";
+    }
+
+    public function getTitle(){
+        return $this->title;
+    }
+
+    public function getRating(){
+        return $this->rating;
     }
 }
 
