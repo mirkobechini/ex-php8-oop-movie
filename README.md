@@ -9,7 +9,7 @@ Alleniamoci con la OOP di PHP immaginando delle classi pertinenti a Film e gener
    => all'interno della classe è definito almeno un metodo
 - vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà
 
-- [] è definita una classe Genre
+- [X] è definita una classe Genre
   -> all'interno della classe sono dichiarate delle variabili d'istanza
   -> all'interno della classe è definito un costruttore
 - ogni film ha un genere
